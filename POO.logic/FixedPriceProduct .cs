@@ -3,15 +3,21 @@
     public class FixedPriceProduct 
     { 
         private double _price;
-        public double price { get; set; }
+
         public FixedPriceProduct()
         {
             _price = price;
         }
 
+        public double price 
+        { 
+            get => _price;
+            set => _price = value;
+        }
+        
         public override string ToString()
         {
-            
+            return price.ToString();
         }
 
         public  double calculateDiscount(double price) 
